@@ -1,6 +1,7 @@
-import { Feather } from '@expo/vector-icons';
 import React, { useState } from 'react';
 import { TextInputProps } from 'react-native';
+import { Feather } from '@expo/vector-icons';
+
 import { Container, IconContainer, InputText } from './styles';
 
 export type InputProps = TextInputProps & {
@@ -18,7 +19,7 @@ export function Input({ icon, value, ...rest }: InputProps) {
 
   function handleInputBlur() {
     setIsFocused(false);
-    setIsFilled(!!value)
+    setIsFilled(!!value);
   }
 
   return (
